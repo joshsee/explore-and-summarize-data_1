@@ -1,0 +1,26 @@
+White Wine Quality Exploration by Josh See
+========================================================
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, packages}
+library(ggplot2)
+```
+
+### Load the Data
+
+```{r echo=FALSE, Load_the_Data}
+# Load the Data
+wines <- read.csv('wineQualityWhites.csv')
+```
+
+```{r echo=FALSE}
+dim(wines)
+summary(wines)
+names(wines)
+str(wines)
+```
+
+## Summary
+
+The lowest and highest quality score given is 3 and 9, with a mean of 5.878
+
+All the attribute provided is numerical values except quality which is a integer.
